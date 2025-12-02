@@ -5,9 +5,9 @@
 #Negative
 #Zero
 
-def MyFunction():
-    for i in range(1, 11):
-        num = int(input(f"Enter number {i}: "))
+def MyFunction(*no):
+    for i in no:
+        num = i
 
         if num > 0:
             if num % 2 == 0:
@@ -22,3 +22,4 @@ def MyFunction():
             print(num, "is Zero")
 
 
+#MyFunction()
