@@ -1,0 +1,13 @@
+import os
+
+current_folder = os.getcwd()
+
+items = os.listdir(current_folder)
+
+files = [f for f in items if os.path.isfile(os.path.join(current_folder, f))]
+
+print("Total Files Found:", len(files))
+
+print("\nList of Files:")
+for i, file in enumerate(files, start=1):
+    print(f"{i}. {file}")
